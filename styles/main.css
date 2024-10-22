@@ -51,21 +51,26 @@
     .page__logo{
         display: block;
         padding: 1em;
-        height: 2em;
+        height: 3em;
         aspect-ratio: 21/12;
         margin: 0 auto;
     }
 
-
+    .h1{
+        font-size: 4em;
+        margin-bottom: 0;
+    }
     .page__intro{
         color: var(--light, white);
-        
+        display: block;
+        width: 50em;    
+        margin: 22em auto auto 8em;
     }
 
     .page__content{
         padding: 1em;
-        max-width: 960px;
-        margin: 0 auto  ;
+        max-width: 945px;
+        margin: 0 auto;
     }
 
 
@@ -107,6 +112,9 @@
         padding: 1em;
         margin: 1em 0;
     }
+    .list{
+        margin: 3em 0;
+    }
     .list > li::marker{
         color: var(--primary, aqua);
     }
@@ -114,5 +122,23 @@
         padding: 1em;
         max-width: 24em;
         display: inline-block;
+    }
+    .cards{
+        margin: 5em 0;
+    }
+
+    .sale{
+        margin-top: 3em;
+        background-color: var(--gray, gray);
+        color: var(--light, white); 
+        text-align: center;
+        padding: 5em 0 3em 0;
+        font-size: 0.9em;
+    }
+    .sale-h{
+        font-size: 3.5em;
+    }
+    .max{
+        font-size: 2em;
     }
 }
