@@ -141,4 +141,14 @@
     .max{
         font-size: 2em;
     }
+    .page__footer{
+        background-color: var(--gray, gray);
+        text-align: center;
+        padding: 2em 0;
+        margin-top: 6em;
+    }
+    .page__footer > a{
+        color: var(--light, white);
+        text-decoration: none;
+    }
 }
