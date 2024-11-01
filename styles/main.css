@@ -63,14 +63,14 @@
     .page__intro{
         color: var(--light, white);
         display: block;
-        width: 50em;    
+        max-width: 50em;    
         margin: 22em auto auto 8em;
     }
 
     .page__content{
         padding: 1em;
         max-width: 945px;
-        margin: 0 auto;
+        margin: 2em auto;
     }
 
 
@@ -118,9 +118,12 @@
     .list > li::marker{
         color: var(--primary, aqua);
     }
+    .list > li{
+        margin: 1em 0;
+    }
     .product{
         padding: 1em;
-        max-width: 24em;
+        max-width: 18em;
         display: inline-block;
     }
     .cards{
@@ -151,4 +154,24 @@
         color: var(--light, white);
         text-decoration: none;
     }
-}
+    .gallery{
+        --indent: 0.5em;
+        margin: calc(-1 * var(--indent));
+    }
+    .gallery__item{
+        display: inline-block;
+        margin: var(--indent);
+    }
+
+    @media (min-width: 768px) {
+        .gallery__item{
+            display: inline-block;
+            width: calc(50% - 2 * var(--indent));
+        }
+        .gallery__item--100w{
+            width: calc(100% - 2 * var(--indent));
+        }
+    }
+
+
+};
